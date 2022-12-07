@@ -50,7 +50,7 @@ def task_1_7():
     list3 = list1 + list2
     print(list3)
 
-#def task():
+#def task(): f
     #lst=[[int(input("x["+str(i)+","+str(j)+"]=")) for j in range(3)] for i in range(5)]
 
 def task_1_8():
