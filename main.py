@@ -50,6 +50,22 @@ def task_1_7():
     list3 = list1 + list2
     print(list3)
 
+#def task():
+    #lst=[[int(input("x["+str(i)+","+str(j)+"]=")) for j in range(3)] for i in range(5)]
+
 def task_1_8():
-    lst=[[int(input("x["+str(i)+","+str(j)+"]=")) for j in range(3)] for i in range(5)]
+    numbers = [[0,0,0],
+               [0,0,0],
+               [0,0,0],
+               [0,0,0],
+               [0,0,0]]
+
+    for j in range(5):
+        for i in range(3):
+            numbers[j][i] = int(input(f'x[{i},{j}] = '))
+
+    for num in numbers:
+        print(num)
+
+
 
