@@ -91,5 +91,17 @@ def task_2_2():
     for numbers_ in numbers:
         print(numbers_)
 
+def task_2_3():
+    total = 0
+    rain = []
 
+    for month in range(1, 13):
+        rain_of_month = int(input(f'Введите количество осадков за {month} месяц: '))
+        rain.append(rain_of_month)
+        total += rain_of_month
+
+
+    print(f'Сумарное количество осадков за год составило {total} \n'
+          f'Самое минимальное значение осадков составило {min(rain)} \n'
+          f'Самое максимальное значение осадков составило {max(rain)}')
 
