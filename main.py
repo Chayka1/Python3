@@ -136,3 +136,19 @@ def task_2_6():
         if n < num_:
             print(num_)
 
+def task_2_7():
+    true_answers = ['a', 'c', 'a', 'a', 'd' 
+                    'b', 'c', 'a', 'c', 'b' 
+                    'a', 'd', 'c', 'a', 'd' 
+                    'c', 'b', 'b', 'd', 'a']
+    answers = []
+
+    for number_of_exercise in range(1,21):
+        answers_ = input(f'Введите ответ на {number_of_exercise} задание: ')
+        answers.append(answers_)
+
+    if true_answers == answers:
+        print('Вы сдали тест!')
+    else:
+        print('Вы не сдали тест!')
+
