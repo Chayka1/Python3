@@ -122,4 +122,17 @@ def task_2_4():
           f'Среднее арифметическое всех чисел: {round(s_a, 2)}')
 
 def task_2_5():
+    print('error')
+
+def task_2_6():
+    nums = []
+    spisok = int(input('Введите диапазон списка: '))
+    n = int(input('Введите число n: '))
+
+    for num in range(spisok + 1):
+        nums.append(num)
+
+    for num_ in nums:
+        if n < num_:
+            print(num_)
 
