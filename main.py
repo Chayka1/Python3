@@ -105,3 +105,21 @@ def task_2_3():
           f'Самое минимальное значение осадков составило {min(rain)} \n'
           f'Самое максимальное значение осадков составило {max(rain)}')
 
+def task_2_4():
+    total = 0
+    numbers = []
+
+    for num_ in range(1, 21):
+        num = int(input(f'Введите {num_} число: '))
+        total += num
+        numbers.append(num)
+
+    s_a = total / len(numbers)
+
+    print(f'Самое минимальное число: {min(numbers)} \n'
+          f'Самое максимальное число: {max(numbers)} \n'
+          f'Сумма всех чисел: {total} \n'
+          f'Среднее арифметическое всех чисел: {round(s_a, 2)}')
+
+def task_2_5():
+
