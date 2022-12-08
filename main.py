@@ -1,3 +1,4 @@
+import random
 def task_1_1():
     name = ['Энштейн', 'Ньютон', 'Коперник', 'Кеплер']
 
@@ -79,6 +80,16 @@ def task_2_1():
         total += price_
 
     print(f'Общий объем продаж составляет {total}')
+
+def task_2_2():
+    numbers = []
+
+    for num in range(8):
+        num = random.randint(0, 9)
+        numbers.append(num)
+
+    for numbers_ in numbers:
+        print(numbers_)
 
 
 
