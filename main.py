@@ -62,10 +62,23 @@ def task_1_8():
 
     for j in range(5):
         for i in range(3):
-            numbers[j][i] = int(input(f'x[{i},{j}] = '))
+            numbers[j][i] = int(input(f'x[{j},{i}] = '))
 
     for num in numbers:
         print(num)
+
+def task_2_1():
+    total = 0
+    sell = []
+
+    for day in range(1, 8):
+        price = int(input(f'Введите продажи за {day} день: '))
+        sell.append(price)
+
+    for price_ in sell:
+        total += price_
+
+    print(f'Общий объем продаж составляет {total}')
 
 
 
