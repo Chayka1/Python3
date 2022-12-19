@@ -160,3 +160,41 @@ def task_2_7():
     else:
         print('Вы не сдали тест!')
 
+
+def task_2_8():
+    pass
+
+
+def task_2_9():
+    pass
+
+
+def task_2_10():
+    pass
+
+
+def task_2_11():
+    pass
+
+
+def task_2_12():
+    nums = []
+    num = int(input('Введите число больше 1: '))
+
+    for j in range(2, num + 1):
+        nums.append(j)
+
+    for k in nums:
+        if k > 1:
+            for i in range(2, int(k / 2) + 1):
+                if (k % i) == 0:
+                    print(f"{k} составное число")
+                    break
+            else:
+                print(f"{k} простое число")
+
+        else:
+            print(f"{k} составное число")
+
+
+
